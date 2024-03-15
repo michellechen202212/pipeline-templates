@@ -20,9 +20,9 @@ stages:
     jobs:
     - template: terraform/terraform-plan-job.yml@templates
       parameters:
-        varFile: 'terraform.DEV.tfvars'
+       # varFile: 'terraform.DEV.tfvars'
         # additionalVars: '-var "agent_token=$(AgentPoolToken)" -var "psql_password=$(PSQLPassword-DEV)"'
-        backendArg: '-backend-config=backend.DEV.tfvars'
+       # backendArg: '-backend-config=backend.DEV.tfvars'
         azureSubscription: ${{ variables.devSubscription }}
         rootFolder: $(rootFolder)
         artifactName: plan-dev
