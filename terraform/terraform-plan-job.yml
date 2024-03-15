@@ -1,10 +1,10 @@
 
 parameters:
   additionalVars: ''
-  varFile: 'terraform.DEV.tfvars'
+  varFile: ''
   backendArg: ''
   azureSubscription: '00c93c32-5bf8-426d-8e40-1909df2d6dd9'
-  rootFolder: 'plan'
+  rootFolder: ''
   artifactName: 'plan'
   pool: 
     name: 'ubuntu'
