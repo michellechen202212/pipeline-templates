@@ -1,3 +1,4 @@
+
 parameters:
   additionalVars: ''
   varFile: ''
@@ -17,7 +18,8 @@ jobs:
       azureSubscription: ${{ parameters.azureSubscription }}
   - script: |
       terraform init -input=false ${{ parameters.backendArg }}
-      terraform plan  -input=false -var-file=${{ parameters.varFile }} ${{ parameters.additionalVars }} -out="$(Build.ArtifactStagingDirectory)/out.plan"
+      terraform plan  -input=false 
+      #-var-file=${{ parameters.varFile }} ${{ parameters.additionalVars }} -out="$(Build.ArtifactStagingDirectory)/out.plan"
  #   workingDirectory: $(System.DefaultWorkingDirectory)/${{ parameters.rootFolder }}
     displayName: Terraform Plan
   - publish: $(Build.ArtifactStagingDirectory)/out.plan
