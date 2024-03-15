@@ -5,7 +5,7 @@ parameters:
   rootFolder: ''
   artifactName: 'plan'
   pool: 
-    name: 'Default'
+    name: 'ubuntu'
 jobs:
 - deployment: apply
   displayName: Terraform Apply
