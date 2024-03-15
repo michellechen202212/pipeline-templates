@@ -6,7 +6,7 @@ parameters:
   rootFolder: ''
   artifactName: 'plan'
   pool: 
-    name: 'Default'
+    name: 'ubuntu'
 jobs:
 - deployment: destroy
   displayName: Terraform Destroy
