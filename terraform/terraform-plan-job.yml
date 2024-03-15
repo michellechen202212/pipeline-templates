@@ -2,7 +2,7 @@ parameters:
   additionalVars: ''
   varFile: ''
   backendArg: ''
-  azureSubscription: ''
+  azureSubscription: '00c93c32-5bf8-426d-8e40-1909df2d6dd9'
   rootFolder: ''
   artifactName: 'plan'
   pool: 
