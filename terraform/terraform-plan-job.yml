@@ -1,7 +1,7 @@
 
 parameters:
   additionalVars: ''
-  varFile: ''
+  varFile: 'terraform.DEV.tfvars'
   backendArg: ''
   azureSubscription: '00c93c32-5bf8-426d-8e40-1909df2d6dd9'
   rootFolder: 'plan'
@@ -18,8 +18,7 @@ jobs:
       azureSubscription: ${{ parameters.azureSubscription }}
   - script: |
       terraform init -input=false ${{ parameters.backendArg }}
-      terraform plan  -input=false 
-      #-var-file=${{ parameters.varFile }} ${{ parameters.additionalVars }} -out="$(Build.ArtifactStagingDirectory)/out.plan"
+      terraform plan  -input=falsev-var-file=${{ parameters.varFile }} ${{ parameters.additionalVars }} -out="$(Build.ArtifactStagingDirectory)/out.plan"
  #   workingDirectory: $(System.DefaultWorkingDirectory)/${{ parameters.rootFolder }}
     displayName: Terraform Plan
   - publish: $(Build.ArtifactStagingDirectory)/out.plan
