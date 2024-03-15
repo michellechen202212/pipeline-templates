@@ -3,7 +3,7 @@ parameters:
   varFile: ''
   backendArg: ''
   azureSubscription: '00c93c32-5bf8-426d-8e40-1909df2d6dd9'
-  rootFolder: ''
+  rootFolder: 'plan'
   artifactName: 'plan'
   pool: 
     name: 'ubuntu'
