@@ -7,8 +7,8 @@ resources:
   repositories:
   - repository: templates
     type: github
-    name: joshjohanning/pipeline-templates
-    endpoint: joshjohanning
+    name: michellechen202212/pipeline-templates
+    endpoint: michellechen202212
 
 variables:
   devSubscription: demo-mslearn-tailspin-azure
