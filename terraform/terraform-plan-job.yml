@@ -6,7 +6,7 @@ parameters:
   rootFolder: ''
   artifactName: 'plan'
   pool: 
-    vmImage: 'ubuntu-latest'
+    name: 'Default'
 jobs:
 - job: plan
   displayName: Terraform Plan
